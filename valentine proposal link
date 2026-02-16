@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Someone Special 💖</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            margin: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #no {
+            background-color: #f44336;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey ❤️</h1>
+    <p>I have something important to ask you...</p>
+    <h1>Will you be mine? 💍</h1>
+
+    <button id="yes" onclick="yesClicked()">YES 💖</button>
+    <button id="no" onmouseover="moveButton()">NO 😅</button>
+
+    <script>
+        function yesClicked() {
+            document.body.innerHTML = "<h1>Yayyyyy ❤️🥰 You just made me the happiest person alive!</h1>";
+        }
+
+        function moveButton() {
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight;
+            document.getElementById('no').style.left = x + 'px';
+            document.getElementById('no').style.top = y + 'px';
+        }
+    </script>
+
+</body>
+</html>
